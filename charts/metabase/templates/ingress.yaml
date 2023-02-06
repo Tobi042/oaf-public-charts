@@ -17,5 +17,5 @@ spec:
         path: /
         pathType: Prefix
   tls:
-  {{ .Values.ingress.tls | toYaml | nindent 2 }}
+    {{ .Values.ingress.tls | toYaml | nindent 4 }}
 {{- end -}}
