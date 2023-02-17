@@ -43,6 +43,8 @@ postgresql:
 ingress:
   # -- Install ingress?
   enabled: false
+  # -- ingressClassName of the ingress you want to use
+  ingressClassName: nginx
   # -- Dictionary of ingress annotations
   annotations: {}
   # -- Ingress TLS settings, passed directly to ingress definition

@@ -1,6 +1,6 @@
 # metabase
 
-![Version: 0.1.11](https://img.shields.io/badge/Version-0.1.11-informational?style=flat-square)
+![Version: 0.1.12](https://img.shields.io/badge/Version-0.1.11-informational?style=flat-square)
 
 Metabase with postgres persistence and plugins support
 
@@ -37,6 +37,7 @@ $ helm install my-release one-acre-fund/metabase
 | global.storageClass | string | `"standard"` | This will be used on all pods for all PVCs, including dependencies (postgres) |
 | ingress.annotations | object | `{}` | Dictionary of ingress annotations |
 | ingress.enabled | bool | `false` | Install ingress? |
+| ingress.ingressClassName | string | `"nginx"` | Name of the ingress class to use |
 | ingress.tls | object | `{}` | Ingress TLS settings, passed directly to ingress definition |
 | javaOpts | string | `""` |  |
 | metabase | object | see `values.yaml` | See https://www.metabase.com/docs/latest/operations-guide/running-metabase-on-docker.html for more details |
