@@ -2,7 +2,30 @@ apiVersion: v1
 entries:
   metabase:
   - apiVersion: v2
-    created: "2023-02-21T09:55:55.283445559Z"
+    created: "2023-02-21T21:13:16.626829513Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.2.1
+    description: Metabase with postgres persistence and plugins support
+    digest: 722e7c622e5d3abf17f3ea723e0e14f910a7d7b8aa9e4fb96a1024ae6f93696d
+    home: https://www.metabase.com/
+    icon: https://avatars.githubusercontent.com/u/10520629?s=400&v=4
+    keywords:
+    - bi
+    - analytics
+    maintainers:
+    - email: yann.jouanique@gmail.com
+      name: Yann-J
+    name: metabase
+    sources:
+    - https://github.com/one-acre-fund/oaf-public-charts/tree/main/charts/metabase
+    urls:
+    - metabase-0.1.15.tgz
+    version: 0.1.15
+  - apiVersion: v2
+    created: "2023-02-21T21:13:16.616981441Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -25,7 +48,7 @@ entries:
     - metabase-0.1.14.tgz
     version: 0.1.14
   - apiVersion: v2
-    created: "2023-02-21T09:55:55.278935302Z"
+    created: "2023-02-21T21:13:16.606834867Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -48,7 +71,7 @@ entries:
     - metabase-0.1.13.tgz
     version: 0.1.13
   - apiVersion: v2
-    created: "2023-02-21T09:55:55.269900989Z"
+    created: "2023-02-21T21:13:16.601388827Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -70,4 +93,4 @@ entries:
     urls:
     - metabase-0.1.12.tgz
     version: 0.1.12
-generated: "2023-02-21T09:55:55.264957027Z"
+generated: "2023-02-21T21:13:16.593839372Z"
