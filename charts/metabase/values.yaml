@@ -48,7 +48,7 @@ ingress:
   # -- Dictionary of ingress annotations
   annotations: {}
   # -- Ingress TLS settings, passed directly to ingress definition
-  tls: {}
+  tls: []
 
 resources: {}
 
