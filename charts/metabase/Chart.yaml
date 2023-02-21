@@ -14,6 +14,6 @@ sources:
   - https://github.com/one-acre-fund/oaf-public-charts/tree/main/charts/metabase
 dependencies:
   - name: postgresql
-    version: ~11.6.6
+    version: ~12.2.1
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
