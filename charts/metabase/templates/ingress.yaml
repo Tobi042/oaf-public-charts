@@ -15,7 +15,8 @@ spec:
       - backend:
           service:
             name: {{ .Release.Name }}-metabase
-            port: 3000
+            port: 
+              number: 3000
         path: /
         pathType: Prefix
   tls:
